@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7115897037:AAG8g5-3GsY52GvZ06jSgvgzG5JEE_CGjM0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7229618661:AAF_V3Pq7nqTMrDLV6SaVXuT96STySkTop0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "20315396"))
@@ -19,21 +19,21 @@ APP_ID = int(os.environ.get("APP_ID", "20315396"))
 API_HASH = os.environ.get("API_HASH", "52edde742449c75895948e0a25abe7db")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002066551015"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002200393852"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1537076718"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "196029054"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Liten:OoIj9FZ6J5ca7K31@cluster0.hcxotkc.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "enmafs1non")
+DB_NAME = os.environ.get("DATABASE_NAME", "enma3nonfs")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002046188296"))
-FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1001992854905"))
+FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1001559862936"))
 FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "0"))
 FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "0"))
 
@@ -44,7 +44,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "8"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "916289268 6534084504").split()):
+    for x in (os.environ.get("ADMINS", "916289268").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
